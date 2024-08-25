@@ -159,14 +159,14 @@ const Dashboard = () => {
                   <Flex
                     justify="space-between"
                     align="center"
-                    className="px-4 "
+                    className="px-4  "
                     gap={20}
                   >
                     <Badge size="small" className=""  count={1}>
                       <BellOutlined className="cursor-pointer bg-gray-400 p-3 rounded-full " style={{ color: "white", fontSize: 25 }} />
                     </Badge>
                     <Space>
-                    <Image className="border rounded-full cursor-pointer" height={45}  src={profile}/>
+                    <Image className="border rounded-full cursor-pointer"   src={profile}/>
                         <p className="text-xl font-bold text-white pl-2">Admin Camille</p>
                     </Space>
                   </Flex>

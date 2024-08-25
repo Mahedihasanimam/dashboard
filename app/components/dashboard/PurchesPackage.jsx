@@ -185,27 +185,28 @@ const PurchasePackage = () => {
 
   return (
     <div className='-mt-2 p-6 bg-black'>
-      <div className='flex items-center justify-between bg-[#404141] text-white p-4 rounded-t-md'>
-        <h3 className='text-2xl font-bold'>Purchased Package List</h3>
-        <Link className='text-xl border-b-2' href={'#'}>View All</Link>
+      <div className='flex flex-col md:flex-row items-center justify-between bg-[#404141] text-white p-4 rounded-t-md'>
+        <h3 className='text-xl md:text-2xl font-bold'>Purchased Package List</h3>
+        <Link className='text-lg md:text-xl border-b-2' href={'#'}>View All</Link>
       </div>
       <Form form={form} component={false}>
-        <Table
-        
-          components={{
-            body: {
-              cell: EditableCell,
-            },
-          }}
-          bordered
-          dataSource={data}
-          columns={mergedColumns}
-          rowClassName="editable-row bg-[#555656] text-lg hover:text-red-500 text-white"
-          pagination={{
-            onChange: cancel,
-          }}
-          className='customheader styles.customTable '
-        />
+        <div className="overflow-x-auto">
+          <Table
+            components={{
+              body: {
+                cell: EditableCell,
+              },
+            }}
+            bordered
+            dataSource={data}
+            columns={mergedColumns}
+            rowClassName="editable-row bg-[#555656] text-lg hover:text-red-500 text-white"
+            pagination={{
+              onChange: cancel,
+            }}
+            className='customheader styles.customTable'
+          />
+        </div>
       </Form>
     </div>
   );
