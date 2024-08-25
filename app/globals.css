@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -30,4 +25,25 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+li.ant-menu-item.ant-menu-item-selected{
+  background-color: #DD1122;
+}
+li.ant-menu-item{
+  background-color:gray;
+ padding: 20px;
+
+
+}
+.customheader .ant-table-thead > tr > th {
+  background-color: #B10E1B; 
+  border: none;
+  color: #fff; /* Text color */
+  font-weight: bold;
+}
+
+li.ant-menu-item{
+  padding: 30px;
+  height: 61px;
 }
