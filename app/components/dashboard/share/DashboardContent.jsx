@@ -29,7 +29,7 @@ const DashboardContent = () => {
             />
             <div>
               <h3 className="font-bold text-gray-400">Total User</h3>
-              <h1 className="text-4xl font-bold text-[#FBA51A]">15000</h1>
+              <h1 className="text-4xl font-bold text-[#FBA51A]">1500</h1>
             </div>
           </div>
           <div className="bg-[#404141] text-white w-full mx-auto flex items-start justify-start gap-6 px-6 py-12 rounded-lg">
